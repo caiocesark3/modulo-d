@@ -1,0 +1,26 @@
+<?php
+$numero=[];
+$negativos = 0;
+$positivos = 0;
+$impares = 0;
+$pares = 0;
+for($i = 0; $i <= 1; $i++){
+    $numero = readline("digito um numero, esse numero pode ser negativo: ");
+
+    if($numero <0 ){
+        $negativos++;
+    }elseif($numero > 0){
+        $positivos++;
+
+    }
+    if($numero % 2==0){
+        $pares++;
+    }else{
+        $impares++;
+
+    }
+};
+echo "fora digitados $negativos numeros negativos. \n";
+echo "foram digitados $positivos numeros positivos. \n";
+echo "foram digitados $impares numeros impares. \n";
+echo "foram digitados $pares numeros pares. \n";

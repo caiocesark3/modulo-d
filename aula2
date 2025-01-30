@@ -1,0 +1,19 @@
+<?php
+$alunos = [];
+for ($i = 0; $i<=1; $i++){
+    $aluno = readline("digite o nome de um aluno: ");
+    $nota =(float) readline("digite a nota do aluno: ");
+
+
+$Alunos =[
+    'nome'=> $aluno,
+    'nota' => $nota,
+];
+}
+$media = ($nota) / 2;
+echo "a media da turma é $media";
+
+$notaAlta = $nota;
+echo "\na maior nota é:  $nota";
+
+
